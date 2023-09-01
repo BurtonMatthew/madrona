@@ -7,15 +7,15 @@
  */
 #pragma once
 
-#ifdef MADRONA_MSVC
-#include <bit>
-#endif
-
 #include <cstdint>
 #include <type_traits>
 #include <madrona/crash.hpp>
 #include <madrona/span.hpp>
 #include <madrona/macros.hpp>
+
+#ifdef MADRONA_MSVC
+#include <bit>
+#endif
 
 // FIXME: Ultimately it would be better to just change all uses of these
 // functions to std::bit_width
