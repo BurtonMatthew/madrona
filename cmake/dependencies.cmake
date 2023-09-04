@@ -29,5 +29,5 @@ else()
     set(PYTHON_REQUIRED_ARG)
 endif()
 
-find_package(Python 3.9 COMPONENTS Interpreter Development.Module
+find_package(Python 3.10 COMPONENTS Interpreter Development.Module
     ${PYTHON_REQUIRED_ARG})
