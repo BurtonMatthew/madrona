@@ -100,7 +100,7 @@ set_property(TARGET madrona_common PROPERTY
 set_property(TARGET madrona_common PROPERTY
     INTERFACE_POSITION_INDEPENDENT_CODE TRUE)
 
-if (CUDAToolkit_FOUND)
+if (CUDAToolkit_FOUND AND NOT WIN32)
     add_library(madrona_cuda STATIC
         ${MADRONA_INC_DIR}/cuda_utils.hpp ${MADRONA_INC_DIR}/cuda_utils.inl
             cuda_utils.cpp
